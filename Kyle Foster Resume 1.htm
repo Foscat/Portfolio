@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:doc="http://xsltsl.org/xsl/documentation/1.0" xmlns:dt="http://xsltsl.org/date-time" xmlns:str="http://xsltsl.org/string" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-16">
+    <title>Kyle Foster</title>
+    <style type="text/css" id="static">
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+        body {line-height: 1; background: #FFF; text-align: left;}
+        ol, ul {list-style: none;}
+        blockquote, q {quotes: none;}
+        blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+        :focus {outline: 0;}
+        ins {text-decoration: none;}
+        del {text-decoration: line-through;}
+        table {border-collapse: collapse; border-spacing: 0;}
+        a img {border: none;}
+        div#document ul,div#document li{margin: 0 0 0 4px;list-style-type: disc;}
+        div#document ul li {padding-left:5px;list-style-type: disc;margin: 0 0 0 10px}
+        .clear {clear: both; height: 0;}
+        br.clear {line-height: 0;}
+        div#document{color:#231f20;background-color:#FFF!important}
+        div.name{font-size:15px;font-weight:bold;line-height:17px;padding-bottom:12px;text-align:center;position:relative;padding-top:37px;}
+        div.name:before{border-top:1px solid #e3d7da;content:"";display:block;position:absolute;top:25px;width:162px;left:0;right:0;margin:auto}
+        div.paragraph {position: relative;}
+        div.address{position:relative;text-align:center;font-size:0.917em;line-height:1.25em;margin:0;padding-bottom:5px}
+        div.address2 {position: relative; text-align: left; font-size: 0.917em; line-height: 1.25em;}
+        .table_wrapper {width: 100%; margin-top: 0;}
+        table.twocol td {width: 50%;}
+        table.skills, table.twocol {width: 100%;}
+        table.skills th, table.skills td {width: 20%; text-align: center;}
+        table.skills th {text-decoration: underline;}
+        table.skills .skillname, table.skills .skillrating {text-align: left; width: 35%;}
+        table.skills .skillrating {width: 20%;}
+        table.skills .skillyears, table.skills .skilllast {width: 19%;}
+        table.skills .pad1 {width: 5%;}
+        table.skills .pad2, table.skills .pad3 {width: 1%;}
+        span.paddedline {display: block;}
+        .heading,.resumeTitle,.execRsmTitle {clear:both;color:#084b81;font-weight:700;position:relative}
+        .heading:before {border-top:1px solid #e3d7da;content: "";display:block;height:1px;position:absolute;top:-10px;width:80px;z-index:1}
+        .txtBold{color:#000;font-weight:bold}
+        .sprtr{margin:0 2px}
+        div#document div.nameSec,div#document div.SECTION_CNTC{color:#fff;background:#084b81;border:1px solid #084b81 !important;}
+        .jobtitle{font-weight:bold;text-transform:uppercase}
+        div#document .excSmry ul,div#document .excExp ul{margin-top:5px}
+
+        /*FIX for FORCEFULLY making left margin ZERO for CL*/
+        div#document .sectionCL .paragraph {margin-top: 0!important;}
+        .educsprtr + .educsprtr{display:none;}
+    </style>
+    <!-- <style type="text/css" id="unparsed">
+        div#document {line-height: {$FTLH}px;}
+        div#document table {line-height: {$FTLH}px;}
+        div#document.pagesize {width: {$DOCW}px;}
+        div#document.vmargins {padding-bottom: {$TBMR}px;}
+        div#document.hmargins {padding-left: {$LRMR}px; padding-right: {$LRMR}px;}
+        div#document .section {margin-top: {$SCSP}px}
+        div#document div.nameSec,div#document div.SECTION_CNTC{margin-top: 0;}
+        div#document div.paragraph {margin-top: {$PSPC}px;}
+        div#document div.firstparagraph {margin-top: 0;}
+        div#document .singlecolumn,div#document .maincolumn{margin-left:{$PIND}px;width:{$MACW}px}
+        div#document div.sectiontitle,div.resumeTitle,div.execRsmTitle{font-size: {$HDSZ}px; line-height: {$HDLH}px;}
+        div#document table.skills td {padding-top: {$TDMT}px;}
+        .fontsize {font-size: {$FTSZ}px;}
+        .fontface {font-family: {$FTFC};}
+        div.heading{padding-bottom:{$LNSP}px;}
+        div.name {font-size: {$NMSZ}px; line-height: {$NMLH}px;}
+        div.address {font-size: {$CISZ}px; line-height: {$CILH}px}
+
+        /*Full color bleed calculation*/
+        div#document div.nameSec,div#document div.SECTION_CNTC{margin-left: -{$LRMR}px!important;margin-right: -{$LRMR}px!important;
+        padding-left:{$LRMR}px;padding-right:{$LRMR}px;}
+
+        /*FIX for Re-calculating width of singlecolumn for CL*/
+        div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+        div.address2 {font-size: {$FTSZ}px; line-height: {$FTLH}px;}
+    </style> -->
+    <style type="text/css" id="dynamic">
+        div#document {line-height: 16px;}
+        div#document table {line-height: 16px;}
+        div#document.pagesize {width: 528px;}
+        div#document.vmargins {padding-bottom: 25px;}
+        div#document.hmargins {padding-left: 42px; padding-right: 42px;}
+        div#document .section {margin-top: 29px}
+        div#document div.nameSec,div#document div.SECTION_CNTC{margin-top: 0;}
+        div#document div.paragraph {margin-top: 15px;}
+        div#document div.firstparagraph {margin-top: 0;}
+        div#document .singlecolumn,div#document .maincolumn{margin-left:0px;width:528px}
+        div#document div.sectiontitle,div.resumeTitle,div.execRsmTitle{font-size: 14px; line-height: 14px;}
+        div#document table.skills td {padding-top: 7px;}
+        .fontsize {font-size: 10px;}
+        .fontface {font-family: Georgia, serif;}
+        div.heading{padding-bottom:6px;}
+        div.name {font-size: 49px; line-height: 70px;}
+        div.address {font-size: 10px; line-height: 22px}
+
+        /*Full color bleed calculation*/
+        div#document div.nameSec,div#document div.SECTION_CNTC{margin-left: -42px!important;margin-right: -42px!important;
+        padding-left:42px;padding-right:42px;}
+
+        /*FIX for Re-calculating width of singlecolumn for CL*/
+        div#document .sectionCL .singlecolumn {margin-left: 0!important; width: 100%;}
+        div.address2 {font-size: 10px; line-height: 16px;}
+    </style>
+  </head>
+  <body>
+    <div id="document" class="fontsize fontface vmargins hmargins linespacing pagesize">
+      <div id="SECTION_NAME688a95af-2b26-43a7-a633-f8f3219cf6ae" class="section nameSec firstsection" style="padding-top:0px;">
+        <div id="PARAGRAPH_688a95af-2b26-43a7-a633-f8f3219cf6ae_1_6f9e6c0f-4750-4523-aca2-3b1f123b28c2" class="paragraph PARAGRAPH_NAME firstparagraph" style="padding-top:NaNpx;">
+                <div class="name">
+                    <span class="field" id="688a95af-2b26-43a7-a633-f8f3219cf6aeFNAM1">Kyle</span>
+                    <span></span>
+                    <span class="field" id="688a95af-2b26-43a7-a633-f8f3219cf6aeLNAM1">Foster</span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_CNTCe07679fd-0979-46f2-8ded-355528de38d2" class="section SECTION_CNTC" style="padding-top:0px;">
+        <div id="PARAGRAPH_e07679fd-0979-46f2-8ded-355528de38d2_1_6924f174-d267-4a5e-a205-c0ee18275d5f" class="paragraph PARAGRAPH_CNTC firstparagraph" style="padding-top:0px;">
+                <div class="address">
+                    <span class="field" id="e07679fd-0979-46f2-8ded-355528de38d2STRT1"></span>
+                    <span class="spaced field" id="e07679fd-0979-46f2-8ded-355528de38d2CITY1">McKinney</span><span>, </span>
+                    <span class="spaced field" id="e07679fd-0979-46f2-8ded-355528de38d2STAT1">TX</span>
+                    <span class="spaced field" id="e07679fd-0979-46f2-8ded-355528de38d2ZIPC1"></span>
+                    <span><span class="sprtr"> | </span></span>
+                    <span>H: </span><span class="field" dependency="HPHN" id="e07679fd-0979-46f2-8ded-355528de38d2HPHN1">972-547-0369</span><span class="sprtr"> | </span>
+                    <span>C: </span><span class="field" dependency="CPHN" id="e07679fd-0979-46f2-8ded-355528de38d2CPHN1">469-618-0410</span><span class="sprtr"> | </span>
+                    <span>E: </span><span class="field" id="e07679fd-0979-46f2-8ded-355528de38d2EMAI1">foscat4o1k@outlook.com</span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_SUMMe80de69c-86df-466f-b755-b5815afa8084" class="section" style="padding-top:0px;">
+        <div class="heading">
+                <div id="SECTNAME_SUMMe80de69c-86df-466f-b755-b5815afa8084" class="sectiontitle">Summary</div>
+            </div>
+        <div id="PARAGRAPH_e80de69c-86df-466f-b755-b5815afa8084_1_e43a9100-8827-445b-95a0-33f3d19f6ff1" class="paragraph firstparagraph" style="padding-top:0px;">
+                <div class="field singlecolumn" id="e80de69c-86df-466f-b755-b5815afa8084FRFM1"><p>Self-motivated and dependable while achieving high performance with minimal supervision. &nbsp;I work to be the best at whatever it is that I do. I learn from my all my work experience to make myself the best employee possible. Reliable customer service representative with extensive track record in demanding sales and account management environments. Service-focused and friendly team player with a knack for building productive working relationships. Extensive cash handling experience.</p></div>
+            </div>
+      </div>
+      <div id="SECTION_HILT2994a28f-d3c5-4465-ac29-104f9535c261" class="section" style="padding-top:0px;">
+        <div class="heading">
+                <div id="SECTNAME_HILT2994a28f-d3c5-4465-ac29-104f9535c261" class="sectiontitle">Skills</div>
+            </div>
+        <div id="PARAGRAPH_2994a28f-d3c5-4465-ac29-104f9535c261_1_1dde0c95-b20e-4a5b-bcb3-75cde1886649" class="paragraph firstparagraph" style="padding-top:0px;">
+                <div class="singlecolumn maincolumn">
+                    <table class="twocol">
+                        <tr>
+                            <td class="field twocol_1" id="2994a28f-d3c5-4465-ac29-104f9535c261SKC11"><ul>
+  <li>Detail-conscious, Results-oriented</li>
+  <li>Microsoft Office - Word, PowerPoint, Excel,</li>
+  <li>Microsoft -Visual Studio Code</li>
+  <li>Bootstrap, JQuery, AJAX</li>
+  <li>Time management skills&nbsp;</li>
+</ul></td>
+                            <td class="field twocol_2" id="2994a28f-d3c5-4465-ac29-104f9535c261SKC21"><ul>
+  <li>Financial records and processing experience</li>
+  <li>Dedicated team player</li>
+  <li>Positive outlook</li>
+  <li>Excellent at multi-tasking</li>
+</ul></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_EXPR09dcfeb8-5929-401c-ac23-bfcfd99658cb" class="section" style="padding-top:0px;">
+        <div class="heading">
+                <div id="SECTNAME_EXPR09dcfeb8-5929-401c-ac23-bfcfd99658cb" class="sectiontitle">Experience</div>
+            </div>
+        <div id="PARAGRAPH_09dcfeb8-5929-401c-ac23-bfcfd99658cb_1_71275fa6-fb41-48d7-a298-5a6bc840d556" class="paragraph firstparagraph" style="padding-top:0px;">
+                <div class="singlecolumn">
+                    <span class="paddedline">
+                        <span class="jobtitle" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJTIT1">Finisher</span><span> | </span>
+                        <span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTD1">08/2016</span><span> to </span><span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbEDDT1">09/2018</span>
+                    </span>
+                    <span class="paddedline txtBold">
+                        <span class="companyname" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbCOMP1">CTL Medical Corporation</span><span> - </span>
+                        <span class="joblocation jobcity" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJCIT1">Addison</span><span>, </span>
+                        <span class="joblocation jobstate" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTA1">TX</span>
+                    </span>
+                    <span class="jobline" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJDES1"><ul>
+  <li>Created new buffing process that doubled buffing speed. This change cut out the need to manually deburr the parts on the exterior.</li>
+  <li>Created maintenance process for bead-blasters. Also created time schedules for each type of part to get desired finishes.&nbsp;</li>
+  <li>Created a process for using the blaster to deburr interiors which further lowered the time it took for manual deburring.</li>
+  <li>Created the system of rotating anodizing fluids on a schedule to improve quality.&nbsp;</li>
+  <li>Presented the anodizing station to perspective clients and started the tradition of the custom colored souvenir for them to take.</li>
+  <li>Helped develop the process to assemble the screws. &nbsp;</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_09dcfeb8-5929-401c-ac23-bfcfd99658cb_2_807c2ef1-2018-4338-9bf6-8f5b033eac6e" class="paragraph" style="padding-top:0px;">
+                <div class="singlecolumn">
+                    <span class="paddedline">
+                        <span class="jobtitle" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJTIT2">Assistant Manager</span><span> | </span>
+                        <span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTD2">10/2014</span><span> to </span><span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbEDDT2">07/2015</span>
+                    </span>
+                    <span class="paddedline txtBold">
+                        <span class="companyname" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbCOMP2">MOOYAH Burgers, Fries & Shakes</span><span> - </span>
+                        <span class="joblocation jobcity" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJCIT2">Frisco</span><span>, </span>
+                        <span class="joblocation jobstate" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTA2">TX</span>
+                    </span>
+                    <span class="jobline" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJDES2"><ul>
+  <li>Was in charge of in-store finances counting deposits, making daily sales printouts, compiling weekly financial reports and sent them to corporate.</li>
+  <li>Maintained inventory of all items in store and did a weekly count of all items in the store. Then I &nbsp;would place orders and when they were received would update the Excel inventory list of all items and prices.</li>
+  <li>The store was the corporate test kitchen so I was responsible for training franchise owners the process for preparing the latest menu items.</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_09dcfeb8-5929-401c-ac23-bfcfd99658cb_3_fcb3de28-60b4-4494-97ea-80f95fd1aee6" class="paragraph" style="padding-top:0px;">
+                <div class="singlecolumn">
+                    <span class="paddedline">
+                        <span class="jobtitle" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJTIT3">Shift Leader</span><span> | </span>
+                        <span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTD3">06/2012</span><span> to </span><span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbEDDT3">09/2014</span>
+                    </span>
+                    <span class="paddedline txtBold">
+                        <span class="companyname" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbCOMP3">Pie Five Pizza</span><span> - </span>
+                        <span class="joblocation jobcity" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJCIT3">Addison</span><span>, </span>
+                        <span class="joblocation jobstate" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTA3">TX</span>
+                    </span>
+                    <span class="jobline" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJDES3"><ul>
+  <li>Allocated tasks to employees on a daily basis and monitored activity and task completion.</li>
+  <li>Managed cash stock and inventory balances accurately.</li>
+  <li>Opened and closed the store, which included counting cash drawers and making bank deposits.</li>
+</ul></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_09dcfeb8-5929-401c-ac23-bfcfd99658cb_4_d77e1649-3718-460b-921e-fbe1be43e7f1" class="paragraph" style="padding-top:0px;">
+                <div class="singlecolumn">
+                    <span class="paddedline">
+                        <span class="jobtitle" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJTIT4">Assistant</span><span> | </span>
+                        <span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTD4">11/2011</span><span> to </span><span class="jobdates" format="%m/%Y" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbEDDT4">05/2012</span>
+                    </span>
+                    <span class="paddedline txtBold">
+                        <span class="companyname" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbCOMP4">Diamond Precision Painting</span><span> - </span>
+                        <span class="joblocation jobcity" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJCIT4">Plano</span><span>, </span>
+                        <span class="joblocation jobstate" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJSTA4">TX</span>
+                    </span>
+                    <span class="jobline" id="09dcfeb8-5929-401c-ac23-bfcfd99658cbJDES4"><ul>
+  <li>Helped set up painting areas by moving furniture and setting up making to protect surfaces.</li>
+  <li>Removed old drywall and disposed of waste safely each day.</li>
+  <li>Learned basic painting techniques and applied them to the best of my ability.</li>
+  <li>Consulted with customers on the latest styles and trends.</li>
+</ul></span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_EDUC85deed90-5200-44ec-86cf-e3dc8b558f96" class="section" style="padding-top:0px;">
+        <div class="heading">
+                <div id="SECTNAME_EDUC85deed90-5200-44ec-86cf-e3dc8b558f96" class="sectiontitle">Education and Training</div>
+            </div>
+        <div id="PARAGRAPH_85deed90-5200-44ec-86cf-e3dc8b558f96_1_d09ba0b1-498b-47b7-a887-2135c3b62dd4" class="paragraph firstparagraph" style="padding-top:0px;">
+                <div class="singlecolumn">
+                    <span class="paddedline txtBold">
+                        <span class="companyname companyname_educ" id="85deed90-5200-44ec-86cf-e3dc8b558f96SCHO1">SMU</span><span class="educsprtr"> - </span>
+                        <span class="joblocation jobcity" id="85deed90-5200-44ec-86cf-e3dc8b558f96SCIT1">Dallas</span><span>,</span>
+                        <span class="joblocation jobstate" id="85deed90-5200-44ec-86cf-e3dc8b558f96SSTA1">Tx</span>
+                        <span class="joblocation jobcountry" id="85deed90-5200-44ec-86cf-e3dc8b558f96SCNT1"></span>
+                        
+                        <span class="degree" id="85deed90-5200-44ec-86cf-e3dc8b558f96DGRE1"></span>
+                    </span>
+                    <span class="paddedline">
+                        <span class="programline" id="85deed90-5200-44ec-86cf-e3dc8b558f96STUY1">Full stack web development</span><span>, </span>
+                        <span class="jobdates" format="%Y" id="85deed90-5200-44ec-86cf-e3dc8b558f96GRYR1">2019</span>
+                    </span>
+                    
+                    <span class="field" id="85deed90-5200-44ec-86cf-e3dc8b558f96FRFM1"><p>I'm still going to school for this but once I'm done I will be able to create applications and to keep my employer's website up to date.</p></span>
+                </div>
+            </div>
+        <div id="PARAGRAPH_85deed90-5200-44ec-86cf-e3dc8b558f96_2_386b95e9-7fe8-44c3-87f6-edee437e1c71" class="paragraph" style="padding-top:0px;">
+                <div class="singlecolumn">
+                    <span class="paddedline txtBold">
+                        <span class="companyname companyname_educ" id="85deed90-5200-44ec-86cf-e3dc8b558f96SCHO2">McKinney Boyd High School</span><span class="educsprtr"> - </span><span class="educsprtr"> - </span>
+                        <span class="joblocation jobcity" id="85deed90-5200-44ec-86cf-e3dc8b558f96SCIT2">McKinney</span><span>,</span>
+                        <span class="joblocation jobstate" id="85deed90-5200-44ec-86cf-e3dc8b558f96SSTA2">TX</span><span>,</span>
+                        <span class="joblocation jobcountry" id="85deed90-5200-44ec-86cf-e3dc8b558f96SCNT2">United States</span>
+                        
+                        <span class="degree" id="85deed90-5200-44ec-86cf-e3dc8b558f96DGRE2"></span>
+                    </span>
+                    <span class="paddedline">
+                        <span class="programline" id="85deed90-5200-44ec-86cf-e3dc8b558f96STUY2"></span>
+                        <span class="jobdates" format="%Y" id="85deed90-5200-44ec-86cf-e3dc8b558f96GRYR2">2011</span>
+                    </span>
+                    
+                    <span class="field" id="85deed90-5200-44ec-86cf-e3dc8b558f96FRFM2"></span>
+                </div>
+            </div>
+      </div>
+      <div id="SECTION_ADDI732ce416-c3f3-4f05-a576-8fb787af22db" class="section" style="padding-top:0px;">
+        <div class="heading">
+                <div id="SECTNAME_ADDI732ce416-c3f3-4f05-a576-8fb787af22db" class="sectiontitle">Additional Information</div>
+            </div>
+        <div id="PARAGRAPH_732ce416-c3f3-4f05-a576-8fb787af22db_1_42a9732e-64ba-47dc-99b0-75379f574cf0" class="paragraph firstparagraph" style="padding-top:0px;">
+                <div class="field singlecolumn" id="732ce416-c3f3-4f05-a576-8fb787af22dbFRFM1"><p>Portfolio website : https://foscat.github.io/Portfolio/</p></div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
