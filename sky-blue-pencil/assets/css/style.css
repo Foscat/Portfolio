@@ -1,0 +1,87 @@
+body {
+    /* background-color: linen; */
+    background-image: url(../images/ballpen-blank-desk-606541.jpg);
+    background-size: cover;
+    font-family: 'Indie Flower', cursive;
+}
+header{
+    margin: 20px;
+}
+.cool{
+    opacity: .75;
+}
+#content{
+    /* margin: 20px; */
+    height: 100%;
+    width: 100%;
+}
+/* General wrapper for aligning content to the horozontal center */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* gives even spacing between elements */
+.around {
+    justify-content: space-around;
+}
+/* general class to make things really bold */
+.boldest{
+    font-weight: bolder;
+}
+.darkie {
+    font-weight: bold;
+}
+#title{
+    font-size: 50px;
+}
+#name-head {
+    float: left;
+    color: rgb(1,64,161);
+    /* background-color: lightblue; */
+}
+#cartoon {
+    float: right;
+    margin-right: 20%; 
+}
+#tweet {
+    height: 100px;
+    width: 100px;
+    clip-path: circle(49% at 50% 50%);
+}
+#fb {
+    height: 120px;
+    width: 120px;
+}
+#email {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    background-color: darkcyan;
+    color: azure;
+}
+.bigger {
+    font-size: 19px;
+}
+footer {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(1,64,161);
+    position: fixed;
+    bottom: 0;
+    opacity: .75;
+}
+.coder{
+    float: right;
+    color: aliceblue;
+    margin: 2px 10px 0 0;
+}
+@media screen and(max-width:980px) {
+    #name-head {
+        float: left;
+        color: rgb(161, 14, 1);
+        /* background-color: lightblue; */
+    }
+};

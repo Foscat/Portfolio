@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/gump icon.jpg" type="image/x-icon">
+    <link rel="icon" href="assets/images/gump icon.jpg" type="image/x-icon">
+ 
+</head>
+<body>
+<img src="assets\images\forrest-gump-original.jpeg" height="250px" width="75%" id="forrest-bench">
+<br>
+  <!-- If veiwing page in chrome you must press play. They disabled autoplay on pages in thier browser -->
+  <div id="bar">
+     <audio controls autoplay loop id="bedford">
+      <source src="assets\images\forrest.mp3" type="audio/mpeg" allow="autoplay" />
+     </audio>
+  </div>
+ <br>
+ 
+<div id="game-box">
+
+     <h1 id="start">Forrest Gump Trivia Game </h1>
+     <h3 class="press">Press any Key to get started!</h3> 
+      <br>
+     <img src="assets\images\forrest.jpg" class="Question image">
+        
+        <div class="game-info">
+          
+          <p id="question"></p>
+          <p id="score"></p>
+          <p id="guesses"></p>
+          <p id="blank-word"></p>
+          <p id="let-guess"></p>
+          <p id="demo"></p>
+        </div>
+    
+</div>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>

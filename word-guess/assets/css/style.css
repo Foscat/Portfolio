@@ -1,0 +1,46 @@
+body {
+    background-color: lightgray;
+}
+p {
+    color: darkslategray;
+    font-size: 100%;
+}
+.press {
+    text-align: center;
+    color: darkslategray;
+}
+#start {
+    text-align: center;
+    color: rgb(31, 99, 96);
+}
+#game-box {
+    contain: content;
+    background-color: lavender;
+    border: 3px solid rgb(31, 75, 31);
+    margin: auto;
+    height: auto;
+    width: 40%;
+    padding: 10px;
+}
+#bar {
+    display: table;
+    margin: 0 auto;
+}
+#bedford {
+    opacity: .25;
+    
+}
+.game-info {
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+.image {
+    width: 40%;
+}
+#forrest-bench {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

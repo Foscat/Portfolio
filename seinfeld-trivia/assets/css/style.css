@@ -1,0 +1,56 @@
+body {
+    background-image: url(../images/kramer.jpg);
+    background-size: cover;
+}
+#startBox {
+    height: 300px;
+    width: 500px;
+    background-color: rgba(221, 170, 31, 0.452);
+    margin: 0% 35%;
+    
+}
+#startBtn {
+    height: 50px;
+    width: 150px;
+    margin-top: 25%;
+    background-color: rgb(77,73,45);
+    border-color: black;
+}
+#wrap {
+    contain: content;
+    text-align: center;
+    
+}
+h1 {
+    font-size: 50px;
+    text-decoration-line: underline;
+    color: rgb(36, 26, 16);
+}
+#timer {
+    font-size: 25px;
+    color: rgb(36, 26, 16);
+}
+#question {
+    font-size: 30px;
+    margin: 0% 35%;
+    color: rgb(36, 26, 16);
+    
+}
+.option{
+    color: rgb(36, 26, 16);
+}
+#guesses {
+    list-style: none;
+    font-size: 25px;
+}
+li{
+    padding: 5px 10px 5px 10px;
+    max-width: fit-content;
+    margin: auto;
+    
+}
+
+li:hover {
+    background-color: rgb(148, 128, 73);
+    border: rgb(78, 57, 17) 1px solid;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Group Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize js for ajax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Title font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="ProjectAssets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="ProjectAssets/images/trollface.jpg" type="image/x-icon">
+    <link rel="icon" href="ProjectAssets/images/trollface.jpg" type="image/x-icon">
+
+</head>
+
+
+<!-- Content -->
+
+<body>
+
+    <header>
+        <div id="headcolor" class="jumbotron">
+            <div class="head-wrap">
+                <div class="row">
+                    <div class="col-md-12 center block">
+                        <h1 class="fancy"><b>Stock Memer</b></h1>
+                        <h3 class="fancy"><b>The place for stocks and memes</b></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <div id="containerWrap" class="wrapper jumbotron">
+        <div class="container">
+
+
+            <div class="row">
+
+                <!-- Company selector box -->
+                <div class="col-md-3 selectWrap">
+                    <div class="col-md-12 ">
+                        <div id="comp-select">
+
+                            <div class="center">
+                                <h3>Select Company</h3>
+                            </div>
+
+                            <!-- Row to seperate dropdown table from header -->
+                            <div class="row">
+                                <form id="company-select" action="/action_page.php">
+                                    <div>
+                                        <select id="companyName" name="company" aria-placeholder="select company name">
+                                            <option value="default">None</option>
+                                            <!-- <option value="Apple Inc.">Apple Inc.</option> -->
+
+                                        </select>
+                                    </div>
+                                    <button type="submit2" id="submit">SUBMIT</button>
+                                </form>
+                                <div class="col-lg-12">
+                                    <ul id="stockData">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stock information display -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div id="stock-box" class="col-md-12">
+                            <div class="row around">
+                                <div class="col-lg-12 text-center">
+                                    <div id="container"></div>
+
+                                    <div id="anychart-embed-samples-stock-candlestick-01" class="anychart-embed anychart-embed-samples-stock-candlestick-01 hidden"></div>
+                                    <script src="https://cdn.anychart.com/releases/8.4.0/js/anychart-core.min.js"></script>
+                                    <script src="https://cdn.anychart.com/releases/8.4.0/js/anychart-stock.min.js"></script>
+                                    <script src="https://cdn.anychart.com/releases/8.4.0/js/anychart-exports.min.js"></script>
+                                    <script src="https://cdn.anychart.com/releases/8.4.0/js/anychart-ui.min.js"></script>
+                                    <div id="ac_style_samples-stock-candlestick-01" style="display:table;"></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Generate meme comment box -->
+
+                <div class="col-md-3 selectWrap">
+                    <div class="col-md-12">
+                        <div id="meme-maker">
+                            <div class="center">
+                                <!-- <h2>Meme comment maker here</h2> -->
+                                <div id="commentBody" class="container selectWrap">
+                                    <div class="comment-box">
+                                        <div class="comment-form">
+                                            <div>
+                                                <h3>Comment</h3>
+                                            </div>
+                                            <form>
+                                                <div>
+                                                    <input type="text" id="name" placeholder="Commentor's Name" />
+                                                </div>
+                                                <div>
+                                                    <!-- <textarea id="comment" rows="3" cols="30" placeholder="Comment"></textarea> -->
+                                                    <input type="text" id="topText" placeholder="Meme Top Text" />
+                                                    <input type="text" id="bottomText" placeholder="Meme Bottom Text" />
+
+                                                    <select id="memeImageName" name="meme" data-default-value="default1"
+                                                        aria-placeholder="Meme Image Selector">
+                                                        <option selected="selected" value="default1">None</option>
+
+                                                    </select>
+
+
+                                                </div>
+                                                <button id="commentSub" type="submit">COMMENT</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Box for holding stock status display and user comments -->
+            <div class="row around" id="memeWrapper">
+
+                <div id="meme-box" class="col-md-12">
+                    <div class="row">
+                        <!-- Stock status meme -->
+                        <div class="col-md-5 mt-3">
+                            <div id="status-meme" class="around">
+                                <h3 id="stockStatus" class="text-center">Stock Meme</h3>
+                                <div id="cMeme">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+
+                        <!-- User meme input pool -->
+                        <div class="col-md-5 mt-3">
+                            <div id="user-memes">
+                                <h3 id="userStatus" class="text-center">User Meme Comments</h3>
+                                <div id="uMeme">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="push"></div>
+
+    </div>
+
+
+
+    <!-- Javascript Link -->
+    <footer class="footer bg-info text-white mt-5 border-top border-info">
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright &copy; The Meme Squad!</p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="nasdaq-companies.json"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script src="ProjectAssets/javascript/project.js"></script>
+        
+
+    </footer>
+
+</body>
+
+
+</html>
